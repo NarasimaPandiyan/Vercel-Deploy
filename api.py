@@ -34,4 +34,4 @@ def hello(chat: str):
 
 @app.get("/ping")
 def hello():
-    return {"ping": db.list_collection_names()}
+    return {"ping": 'pong'}

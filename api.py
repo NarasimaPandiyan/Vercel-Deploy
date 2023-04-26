@@ -9,7 +9,7 @@ from dotenv import load_dotenv
 
 load_dotenv()
 
-uri = os.getenv("MONGO_URI")
+uri ='mongodb+srv://Narasima:OHgveZ8HKHPx1vYv@test.zwpiuqo.mongodb.net/?retryWrites=true&w=majority'
 # Create a new client and connect to the server
 client = MongoClient(uri, server_api=ServerApi('1'))
 
@@ -26,7 +26,7 @@ def get_messages(chat: str):
     return data
 
 def ping():
-    return 'lol'
+    return db.list_collection_names()
 
 @app.get("/test/{chat}")
 def hello(chat: str):
@@ -34,4 +34,4 @@ def hello(chat: str):
 
 @app.get("/ping")
 def hello():
-    return {"ping": "pong!"}
+    return {"ping": ping()}

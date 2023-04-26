@@ -15,6 +15,7 @@ client = MongoClient(uri, server_api=ServerApi('1'))
 
 db = client.CalmCove
 
+col_list = db.list_collection_names()
 def post_message(chat: str, message: str):
     pass
 
@@ -34,4 +35,4 @@ def hello(chat: str):
 
 @app.get("/ping")
 def hello():
-    return {"ping": db.list_collection_names()}
+    return {"ping": col_list}

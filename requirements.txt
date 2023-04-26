@@ -1,28 +1,7 @@
 # This file may be used to create an environment using:
 # $ conda create --name <env> --file <this file>
 # platform: win-64
-asgiref==3.6.0
-bzip2==1.0.8
-ca-certificates==2023.01.10
-django==4.2
-dnspython==2.3.0
 fastapi==0.95.1
-libffi==3.4.2
-openssl==1.1.1t
-pip==23.1.1
-pydantic==1.10.7
 pymongo==4.3.3
-python==3.11.3
 python-dotenv==1.0.0
-setuptools==66.0.0
-sqlite==3.41.2
-sqlparse==0.4.4
-starlette==0.26.1
-tk==8.6.12
-tzdata==2023.3
 uvicorn==0.21.1
-vc==14.2
-vs2015_runtime==14.27.29016
-wheel==0.38.4
-xz==5.2.10
-zlib==1.2.13

@@ -26,11 +26,7 @@ def get_messages(chat: str):
     return data
 
 def ping():
-    try:
-        client.admin.command('ping')
-        return {f"Pinged your deployment. You successfully connected to MongoDB! {db.list_collection_names()}"}
-    except Exception as e:
-        return({"error":e})
+    return 'lol'
 
 @app.get("/test/{chat}")
 def hello(chat: str):
@@ -38,4 +34,4 @@ def hello(chat: str):
 
 @app.get("/ping")
 def hello():
-    return {"ping":ping()}
+    return {"ping": "pong!"}
